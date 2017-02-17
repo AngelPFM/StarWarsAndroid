@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.angelhpascual.starwarsandroid">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="SWAPI"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+        <activity
+            android:name=".BuscarPersonajes"
+            android:noHistory="false"></activity>
+        <activity
+            android:name=".BuscarPlanetas"
+            android:noHistory="false"></activity>
+
+
+        <activity
+            android:name=".BuscarPeliculas"
+            android:noHistory="false"></activity>
+        <activity
+            android:name=".BuscarEspecies"
+            android:noHistory="false"></activity>
+        <activity
+            android:name=".Splash"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Help"></activity>
+    </application>
+
+</manifest>
